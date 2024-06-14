@@ -1,0 +1,11 @@
+#include <fstream>
+std::ifstream fin("bisectoare.in");
+std::ofstream fout("bisectoare.out");
+int main() {
+    int32_t x,y=0;
+    while(fin>>x)
+    {
+        y^=x;
+    }
+    fout<<y;
+}
