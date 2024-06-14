@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+int main ()
+{
+    int64_t n,nr=0,i=1,primulnr=0,ult=0;
+    bool primu=false;
+    std::cin >> n;
+    while(n)
+    {   nr++;
+        if(n%2==1)
+        {
+            if(primulnr==0)
+            {
+                primulnr=nr;
+            }
+            ult=nr;
+        }
+        n>>=1;
+    }
+    std::cout<<ult-primulnr+1;
+    return 0;
+}
